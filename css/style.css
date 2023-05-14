@@ -1,0 +1,14 @@
+.color-quote {
+    color: #fcdb5e;
+}
+
+.quote i {
+    font-size: 2rem;
+}
+
+.quote {
+    border-left: .35rem solid #fcdb5e;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
