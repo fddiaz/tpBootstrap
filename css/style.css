@@ -12,3 +12,18 @@
     border-right: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
+
+/* tithe css */
+
+#price {
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.discount {
+    color: #fcdb5e;
+    font-style: italic;
+    /* font-size: 14px; */
+    margin-left: 5px;
+}
