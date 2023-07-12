@@ -2,7 +2,7 @@
             <section class="px-4 px-lg-5">
                 <!-- Start heading row-->
                 <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                    <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="./media/img/Portada-gatos.png" alt="Dibujo de 3 gatos" /></div>
+                    <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="./templates/media/img/Portada-gatos.png" alt="Dibujo de 3 gatos" /></div>
                     <div class="col-lg-5">
                         <h1 class="font-weight-light">Larga vida a los reyes...</h1>
                         <p>Los felinos han sido venerados desde antiguas civilizaciones, encarnaciones divinas en el Antiguo Egipto. Ahora, con la llegada del internet y las redes sociales, han ganado un espacio enorme en nuestras vidas llegando a ser los “reyes” debido a la aceptación de millones de usuarios.</p>
@@ -22,7 +22,7 @@
                     <div class="col-md-4 mb-5">
                         <div class="card h-100">
                             <div class="card-body">
-                                <img src="./media/img/navia.jpg" class="card-img-top" alt="Navia">
+                                <img src="./templates/media/img/navia.jpg" class="card-img-top" alt="Navia">
                                 <h2 class="card-title">Cat One</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
                             </div>
@@ -32,7 +32,7 @@
                     <div class="col-md-4 mb-5">
                         <div class="card h-100">
                             <div class="card-body">
-                                <img src="./media/img/deva.jpg" class="card-img-top" alt="Deva">
+                                <img src="./templates/media/img/deva.jpg" class="card-img-top" alt="Deva">
                                 <h2 class="card-title">Cat Two</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
                             </div>
@@ -42,7 +42,7 @@
                     <div class="col-md-4 mb-5">
                         <div class="card h-100">
                             <div class="card-body">
-                                <img src="./media/img/mefi.jpg" class="card-img-top" alt="Navia">
+                                <img src="./templates/media/img/mefi.jpg" class="card-img-top" alt="Navia">
                                 <h2 class="card-title">Cat Three</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
                             </div>

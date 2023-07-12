@@ -3,7 +3,7 @@
         <div class="col-4 mt-5 ">
             <form action="validar.php" method="post" class="form-signin mt-5">
                 <div class="text-center mb-4">
-                    <img class="mb-4" src="./media/svg/logo.svg" alt="" width="86" height="86">
+                    <img class="mb-4" src="./templates/media/svg/logo.svg" alt="" width="86" height="86">
                     <h1 class="h3 mb-3 font-weight-normal">Login de usuarios</h1>
                     <p>
                         Este login esta pensado para usaurios y admininstradores del sistema, a los cuales nuestros reyes han tenido el honor de designar.

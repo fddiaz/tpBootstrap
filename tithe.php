@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-    <?php include("views/head.php"); ?>
+    <?php include("templates/head.php"); ?>
     <body>
         <!-- Start header --->
-        <?php include("views/header.php"); ?>
+        <?php include("templates/header.php"); ?>
         <!-- End header -->
         <!-- Start content-->
-        <?php include("views/tithe.php"); ?>
+        <?php include("templates/tithe.php"); ?>
         <!-- End content -->
         <!-- Start Footer -->
-        <?php include("views/footer.php"); ?>
+        <?php include("templates/footer.php"); ?>
         <!-- End Footer -->
     </body>
 </html>

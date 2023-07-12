@@ -1,5 +1,5 @@
 <header>
     <!-- Start navbar --->
-    <?php include("./views/menu.php"); ?>
+    <?php include("./templates/menu.php"); ?>
     <!-- End navbar -->
 </header>

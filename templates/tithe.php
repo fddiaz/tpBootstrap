@@ -3,7 +3,7 @@
             <!-- Start heading row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0"
-                        src="./media/img/Portada-gatos.png" alt="Dibujo de 3 gatos" /></div>
+                        src="./templates/media/img/Portada-gatos.png" alt="Dibujo de 3 gatos" /></div>
                 <div class="col-lg-5">
                     <h1 class="font-weight-light">Conviértete en un Subdito!</h1>
                     <p><b>Nostros Reyes</b> necesitan de nuestro dinero para mantenerse <i>esponjosos, gordos y felices</i> (ellos no estan dispuestos a malgastar su tiempo de descanso en cosas tan mundanas como "trabajar").</p>
@@ -40,7 +40,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="./media/img/tithe/noble.jpeg" class="card-img-top" alt="...">
+                            <img src="./templates/media/img/tithe/noble.jpeg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Noble</h5>
                                 <p class="card-text">$ 30.000</p>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="./media/img/tithe/caballero.png" class="card-img-top" alt="...">
+                            <img src="./templates/media/img/tithe/caballero.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Caballero</h5>
                                 <p class="card-text">$ 15.000</p>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="./media/img/tithe/campesino.jpeg" class="card-img-top" alt="...">
+                            <img src="./templates/media/img/tithe/campesino.jpeg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Campesino</h5>
                                 <p class="card-text">$ 7500</p>
