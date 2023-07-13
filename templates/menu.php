@@ -10,7 +10,14 @@
                 <li class="nav-item"><a class="nav-link" href="#!">Gatos ilustres</a></li>
                 <li class="nav-item"><a class="nav-link" href="#!">Noticias</a></li>
                 <li class="nav-item"><a class="nav-link" href="tithe.php">Diezmo!</a></li>
-                <li class="nav-item bg-primary rounded"><a class="nav-link" href="login.php">Login</a></li>
+                <?php 
+                echo '<li class="nav-item bg-primary rounded"><a class="nav-link" href="';
+                if(Session::get('login')){
+                    echo 'logout.php">Logout</a></li>';
+                } else {
+                    echo 'login.php">Login</a></li>';
+                }
+                ?>
             </ul>
         </div>
     </div>

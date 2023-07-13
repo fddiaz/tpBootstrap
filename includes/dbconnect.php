@@ -10,7 +10,7 @@ function db_connect() {
     if(!isset($connection)) {
              // Cargua la configuración como una matriz. 
              // Use la ubicación real de su archivo de configuración.
-        $config = parse_ini_file('../.env/config.ini'); 
+        $config = parse_ini_file(__DIR__.'/../.env/config.ini'); 
         $connection = mysqli_connect(
                             $config['servername'],
                             $config['username'],
