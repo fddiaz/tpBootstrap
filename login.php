@@ -1,9 +1,3 @@
-<?php
-
-include_once('./includes/autoload.php');
-
-?>
-
 <!DOCTYPE html>
 <html lang="es">
     <?php include('templates/head.php'); ?>

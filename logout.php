@@ -1,6 +1,6 @@
 <?php
 
-include_once('./includes/autoload.php');
+require_once('./includes/autoload.php');
 
 Session::destroy();
 
