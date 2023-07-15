@@ -9,7 +9,7 @@
     } elseif (Session::get('login') == TRUE && Session::get('role_id') == 2 ) {
         include('templates/list.php');
     } else {
-        include('templates/404.php');
+        include('templates/noaccess.php');
     }
 ?>
 <!-- End content -->
