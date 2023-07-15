@@ -17,7 +17,7 @@ function tithe() {
         "3": 50,
         "4": 80
     };
-    
+
     let tithe = document.getElementById("tithe").value;
     console.log(tithe);
     let plus = document.getElementById("plus").value;
@@ -26,7 +26,7 @@ function tithe() {
     console.log(tithe_num);
     let feline_num = document.getElementById("feline_num").value;
     console.log(feline_num);
-    
+
     if (tithe != "0") {
         let subtotal = (tithePrices[tithe] + plusValue[plus]) * tithe_num;
         let discount = subtotal * feline_discount[feline_num] / 100;
@@ -41,8 +41,6 @@ function tithe() {
     }
 }
 
-
-
 function reset() {
     document.getElementById("price").innerHTML = '$0';
     document.getElementById("tithe").value = '0';
@@ -51,6 +49,7 @@ function reset() {
     document.getElementById("feline_num").value = '';
 }
 
-document.getElementById("resume").addEventListener("click", tithe);
-
-document.getElementById("reset").addEventListener("click", reset);
+if(document.getElementById("formtithe")){
+    document.getElementById("resume").addEventListener("click", tithe);
+    document.getElementById("reset").addEventListener("click", reset);
+}
