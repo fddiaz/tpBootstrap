@@ -70,7 +70,7 @@
                     <div class="mx-auto">
                         <div class="mt-2 mx-auto p-4 bg-light">
                             <div class="bg-light">
-                                <form id="form" role="form" onsubmit="event.preventDefault();">
+                                <form id="formtithe" role="form" onsubmit="event.preventDefault();">
                                     <div class="controls">
                                         <div class="row pb-3">
                                             <div class="col-md-6">
