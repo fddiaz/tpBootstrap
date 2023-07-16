@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 16-07-2023 a las 03:45:28
+-- Tiempo de generación: 16-07-2023 a las 23:56:01
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -24,6 +24,27 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `discounts`
+--
+
+CREATE TABLE `discounts` (
+  `id` int(11) NOT NULL,
+  `cats` int(2) NOT NULL,
+  `percent` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `discounts`
+--
+
+INSERT INTO `discounts` (`id`, `cats`, `percent`) VALUES
+(1, 1, 15),
+(2, 2, 50),
+(3, 3, 80);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `minions`
 --
 
@@ -32,11 +53,13 @@ CREATE TABLE `minions` (
   `name` varchar(50) NOT NULL,
   `lastname` varchar(50) NOT NULL,
   `mail` varchar(200) NOT NULL,
-  `tithevalue` decimal(15,2) NOT NULL,
-  `more` decimal(15,2) NOT NULL,
-  `titheamount` int(2) DEFAULT NULL,
+  `tithe_id` int(11) NOT NULL,
+  `plus` decimal(15,2) NOT NULL,
+  `tithe_multiplier` int(2) NOT NULL,
   `catsown` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `roles`
@@ -55,6 +78,28 @@ CREATE TABLE `roles` (
 INSERT INTO `roles` (`id`, `name`, `description`) VALUES
 (1, 'Administrador', '\"Un gran poder conlleva una gran amsiedad.\"\r\n- Tío Ben'),
 (2, 'Usuario', 'Un simple usuario.');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tithes`
+--
+
+CREATE TABLE `tithes` (
+  `id` int(11) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `amount` decimal(10,2) NOT NULL,
+  `image` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `tithes`
+--
+
+INSERT INTO `tithes` (`id`, `title`, `amount`, `image`) VALUES
+(1, 'Noble', '30000.00', './templates/media/img/tithe/noble.jpeg'),
+(2, 'Caballero', '15000.00', './templates/media/img/tithe/caballero.png'),
+(3, 'Campesino', '7000.00', './templates/media/img/tithe/campesino.jpeg');
 
 -- --------------------------------------------------------
 
@@ -84,15 +129,28 @@ INSERT INTO `users` (`id`, `username`, `role_id`, `mail`, `password`, `disable`)
 --
 
 --
+-- Indices de la tabla `discounts`
+--
+ALTER TABLE `discounts`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `minions`
 --
 ALTER TABLE `minions`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `minions_FK` (`tithe_id`);
 
 --
 -- Indices de la tabla `roles`
 --
 ALTER TABLE `roles`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `tithes`
+--
+ALTER TABLE `tithes`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -107,16 +165,28 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `discounts`
+--
+ALTER TABLE `discounts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT de la tabla `minions`
 --
 ALTER TABLE `minions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
 --
 ALTER TABLE `roles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de la tabla `tithes`
+--
+ALTER TABLE `tithes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
@@ -127,6 +197,12 @@ ALTER TABLE `users`
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `minions`
+--
+ALTER TABLE `minions`
+  ADD CONSTRAINT `minions_FK` FOREIGN KEY (`tithe_id`) REFERENCES `tithes` (`id`);
 
 --
 -- Filtros para la tabla `users`
