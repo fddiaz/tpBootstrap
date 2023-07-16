@@ -8,9 +8,9 @@ function db_connect() {
 
         // Intente conectarse a la base de datos, si aún no se ha establecido una conexión.
     if(!isset($connection)) {
-             // Cargua la configuración como una matriz. 
+             // Cargua la configuración como una matriz.
              // Use la ubicación real de su archivo de configuración.
-        $config = parse_ini_file(__DIR__.'/../.env/config.ini'); 
+        $config = parse_ini_file(__DIR__.'/../.env/config.ini');
         $connection = mysqli_connect(
                             $config['servername'],
                             $config['username'],
@@ -21,7 +21,7 @@ function db_connect() {
         // Si la conexión no tuvo éxito, maneje el error.
     if($connection === false) {
             // Manejo del error.
-        return mysqli_connect_error(); 
+        return mysqli_connect_error();
     }
     return $connection;
 }
@@ -33,4 +33,4 @@ $connection = db_connect();
 if ($connection->connect_error) {
     die('Connection failed: ' . $connection->connect_error);
 }
-?> 
+?>
