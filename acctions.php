@@ -30,14 +30,16 @@ if(isset($_POST['registration']) && $_POST['registration'] == "voluntary"){
                  ".$_POST['catsown'].")";
 
     $result = $connection->query($sql);
+    
+    echo $result;
 
-    if($result == 1){
-        $connection->close();
-        header('Location:thanks.php');
-    } else {
-        $connection->close();
-        header('Location:404.php');
-    }
+    // if($result == 1){
+    //     $connection->close();
+    //     header('Location:thanks.php');
+    // } else {
+    //     $connection->close();
+    //     header('Location:404.php');
+    // }
 }
 
 if($_POST && Session::get('role_id') == 1){
@@ -72,7 +74,7 @@ if($_POST && Session::get('role_id') == 1){
     }
 
 } else {
-    Session::CheckSession();
+    // Session::CheckSession();
 }
 
 ?>
