@@ -3,7 +3,7 @@
 <?php include('templates/header.php'); ?>
 <!-- End header -->
 <!-- Start content-->
-<?php include('templates/login_form.php'); ?>
+<?php include('templates/minion_form.php'); ?>
 <!-- End content -->
 <!-- Start Footer -->
 <?php include('templates/footer.php'); ?>

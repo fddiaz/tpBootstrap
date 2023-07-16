@@ -1,11 +1,7 @@
-<?php 
-session_start();
+<?php
 
-session_unset();
+require_once('./includes/autoload.php');
 
-session_destroy();
-
-header('location: ./index.php', true, 301);
-exit();
+Session::destroy();
 
 ?>
