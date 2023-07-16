@@ -6,7 +6,7 @@
                     <img class="mb-4" src="./templates/media/svg/logo.svg" alt="" width="86" height="86">
                     <h1 class="h3 mb-3 font-weight-normal">Login de usuarios</h1>
                     <p>
-                        Este login esta pensado para usaurios y admininstradores del sistema, a los cuales nuestros reyes han tenido el honor de designar.
+                        Este login esta pensado para usuarios y administradores del sistema, a los cuales nuestros reyes han tenido el honor de designar.
                     </p>
                 </div>
                 <div class="pt-4">

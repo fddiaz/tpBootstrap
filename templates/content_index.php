@@ -5,7 +5,7 @@
                     <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="./templates/media/img/Portada-gatos.png" alt="Dibujo de 3 gatos" /></div>
                     <div class="col-lg-5">
                         <h1 class="font-weight-light">Larga vida a los reyes...</h1>
-                        <p>Los felinos han sido venerados desde antiguas civilizaciones, encarnaciones divinas en el Antiguo Egipto. Ahora, con la llegada del internet y las redes sociales, han ganado un espacio enorme en nuestras vidas llegando a ser los “reyes” debido a la aceptación de millones de usuarios.</p>
+                        <p>Los felinos han sido venerados desde antiguas civilizaciones, encarnaciones divinas en el Antiguo Egipto. Ahora, con la llegada del Internet y las redes sociales, han ganado un espacio enorme en nuestras vidas llegando a ser los “reyes” debido a la aceptación de millones de usuarios.</p>
                         <a class="btn btn-primary" href="#form">Únete ahora!</a>
                     </div>
                 </div>

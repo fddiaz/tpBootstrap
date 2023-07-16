@@ -7,8 +7,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 text-center">
-                <span class="display-1 d-block">404</span>
-                <div class="mb-4 mt-2 lead">No se encontró la página que está buscando.</div>
+                <span class="display-1 d-block">Gracias por registrarse</span>
+                <div class="mb-4 mt-2 lead">A la brevedad nos comunicaremos con Ud. para indicarle la forma de pago.</div>
                 <a href="index.php" class="btn btn-link">Volver al inicio</a>
             </div>
         </div>
